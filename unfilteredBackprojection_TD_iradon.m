@@ -87,3 +87,8 @@ end
 Omn_r = (pi/numel(phiVals))*sum(QI,2);
 
 Omn_r = reshape(Omn_r,size(Xmn));
+
+layered_Omn = (pi/numel(phiVals))*QI;
+sphereAngs = phiVals;
+dtSamps = tVals;
+save show_slices.mat layered_Omn Pij sphereAngs dtSamps;
